@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOYOTA CROWN LOGIN</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #050607;
+    color: white;
+    overflow: hidden;
+}
+
+/* صورة السيارة تغطي كامل الشاشة */
+.car {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+/* مربع تسجيل الدخول في المنتصف */
+.login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    max-width: 92vw;
+    padding: 32px 28px;
+    text-align: center;
+    background: rgba(7, 13, 18, 0.58);
+    border: 1px solid #e8cc99;
+    border-radius: 13px;
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    color: #f2d39b;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.subtitle {
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin: 14px 0 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #d8b777;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 14px;
+    color: #f0d6a8;
+    font-size: 11px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<img class="car" src="car.jpeg" alt="Toyota Crown">
+
+
+<section class="login">
+
+<h1>TOYOTA CROWN</h1>
+
+<p class="subtitle">مرحباً بك، سجل الدخول للمتابعة</p>
+
+<form onsubmit="event.preventDefault(); alert('تم تسجيل الدخول بنجاح');">
+
+<label>اسم المستخدم</label>
+<input type="text" placeholder="أدخل اسم المستخدم" required>
+
+<label>كلمة المرور</label>
+<input type="password" placeholder="أدخل كلمة المرور" required>
+
+<button type="submit">تسجيل الدخول</button>
+
+</form>
+
+<div class="footer">
+ELEGANCE • POWER • COMFORT
+</div>
+
+</section>
+
+</body>
+</html>
